@@ -1,3 +1,4 @@
 _OLD
 __pycache__
 *.pyc
+*.DS_STORE
