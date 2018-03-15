@@ -1,24 +1,36 @@
 {
 
-	"verse1":{
-		"verseID":"1 Thessalonians 2:12",
-		"verse":"Encouraging, comforting and urging you to live lives worthy of God who calls you into his kingdom and glory.",
-		"answer":"NoneRightNow",
-		"verseType":"Faith"
+	"verse1":{"verseType":"worry",
+		"scripture":{"english":{
+			"verseID":"Proverbs 3:5-6",
+			"verse":"Trust in the LORD with all your ______ and lean not on your own ____________. In all your ways ________ to him, and he will make your paths straight.",
+			"answer1":"heart",
+			"answer2":"understanding",
+			"answer3":"submit"
+		}, "korean":{
+			"verseID":"잠언 3:5-6",
+			"verse":"너는 마음을 다하여 여호와를 신뢰하고 네 지식을 의지하지 말아라. 너는 모든 일에 여호와를 인정하라. 그러면 그가 너에게 바른 길을 보이실 것이다.",
+			"answer1":"NoneRightNow",
+			"answer2":"NoneRightNow",
+			"answer3":"NoneRightNow"
+		}}
+		
 	},
-	"verse2":{
-		"verseID":"Proverbs 18:13",
-		"verse":"To answer before listening — that is folly and shame.",
-		"answer":"NoneRightNow",
-		"verseType":"Love"
-
-	},
-	"verse3":{
-		"verseID":"1 Timothy 6:12",
-		"verse":"Fight the good fight of the faith. Take hold of the eternal life to which you were called when you made your good confession in the presence of many witnesses.",
-		"answer":"NoneRightNow",
-		"verseType":"Faith"
-
+	"verse2":{"verseType":"worry",
+		"scripture":{"english":{
+			"verseID":"Philippians 4:6-7",
+			"verse":"Do not be ________ about anything, but in every situation, by ________ and petition, with thanksgiving, present your requests to God. And the ________ of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus",
+			"answer1":"anxious",
+			"answer2":"prayer",
+			"answer3":"peace"
+		}, "korean":{
+			"verseID":"빌립보서 4:6-7",
+			"verse":"아무것도 염려하지 말고 모든 일에 기도와 간구로 여러분이 필요로 하는 것을 감사하는 마음으로 하나님께 말씀드리십시오. 그러면 도저히 상상도 할 수 없는 하나님의 놀라운 평안이 그리스도 예수님 안에서 여러분의 마음과 생각을 지켜 줄 것입니다.",
+			"answer1":"NoneRightNow",
+			"answer2":"NoneRightNow",
+			"answer3":"NoneRightNow"
+		}}
+		
 	}
 
 
