@@ -45,7 +45,7 @@ def welcome_screen(self, root):
 					 command=self.verseQuestStart)
 	vmemBtn.grid(row=1, column=1)
 
-	storyBtn = Button(center_frame, text='Story Mode', width=12, height=2, command=None)
+	storyBtn = Button(center_frame, text='Quiz Questions', width=12, height=2, command=self.quizQuestionsStart)
 	storyBtn.grid(row=1, column=2)
 
 	moodBtn = Button(center_frame, text='Mood Booster', width=12, height=2, command=None)

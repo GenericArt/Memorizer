@@ -1,0 +1,898 @@
+[
+    {
+        "answer": "Marry",
+        "category": "beginner",
+        "decoyOne": "Eve",
+        "decoyThree": "Rebecca",
+        "decoyTwo": "Naomi",
+        "question": "Who was the mother of Jesus?"
+    },
+    {
+        "answer": "Fish and Bread",
+        "category": "beginner",
+        "decoyOne": "Pomegranate and Peaches",
+        "decoyThree": "Bread and Wine",
+        "decoyTwo": "Chicken and Pork",
+        "question": "With what food did Jesus feed 5,000 people?"
+    },
+    {
+        "answer": "Peter",
+        "category": "beginner",
+        "decoyOne": "Judas",
+        "decoyThree": "David",
+        "decoyTwo": "Paul",
+        "question": "Who, when accused of being with Jesus, lied and said that he did not know him, three times?"
+    },
+    {
+        "answer": "Eaten by a fish",
+        "category": "beginner",
+        "decoyOne": "Drowned",
+        "decoyThree": "Floated",
+        "decoyTwo": "Hit his head on a rock",
+        "question": "What happened to Jonah after he was thrown overboard?"
+    },
+    {
+        "answer": "12",
+        "category": "beginner",
+        "decoyOne": "11",
+        "decoyThree": "14",
+        "decoyTwo": "8",
+        "question": "How many apostles did Jesus choose?"
+    },
+    {
+        "answer": "Eve",
+        "category": "beginner",
+        "decoyOne": "Marry",
+        "decoyThree": "Jude",
+        "decoyTwo": "Sarah",
+        "question": "Who is the first mother mentioned in the Bible?"
+    },
+    {
+        "answer": "Two Stone Tablets",
+        "category": "beginner",
+        "decoyOne": "Two Paper Sheets",
+        "decoyThree": "Two Camels Backs",
+        "decoyTwo": "Two Left Hands",
+        "question": "On what were the Ten Commandments written?"
+    },
+    {
+        "answer": "Manger",
+        "category": "beginner",
+        "decoyOne": "Motel",
+        "decoyThree": "Tree",
+        "decoyTwo": "House",
+        "question": "What did Jesus sleep in after he was born?"
+    },
+    {
+        "answer": "Dust",
+        "category": "beginner",
+        "decoyOne": "Water",
+        "decoyThree": "Monkeys",
+        "decoyTwo": "Goop",
+        "question": "What was man created from?"
+    },
+    {
+        "answer": "Wash Their Feet",
+        "category": "beginner",
+        "decoyOne": "Pray For Them",
+        "decoyThree": "Dance with Them",
+        "decoyTwo": "Fist Bump Them",
+        "question": "What did Jesus do to each of the disciples during the Last Supper?"
+    },
+    {
+        "answer": "Wash Their Feet",
+        "category": "beginner",
+        "decoyOne": "Pray For Them",
+        "decoyThree": "Dance with Them",
+        "decoyTwo": "Fist Bump Them",
+        "question": "What did Jesus do to each of the disciples during the Last Supper?"
+    },
+    {
+        "answer": "Sling and Stone",
+        "category": "beginner",
+        "decoyOne": "Long Stick",
+        "decoyThree": "Giant Hammer",
+        "decoyTwo": "Game of Chess",
+        "question": "How did David defeat Goliath?"
+    },
+    {
+        "answer": "Revelation",
+        "category": "beginner",
+        "decoyOne": "Timothy",
+        "decoyThree": "Genesis",
+        "decoyTwo": "Acts",
+        "question": "What is the last book of the New Testament?"
+    },
+    {
+        "answer": "Long Hair",
+        "category": "beginner",
+        "decoyOne": "Big Muscles",
+        "decoyThree": "Large Beard",
+        "decoyTwo": "Small Waist",
+        "question": "What was the apparent source of Samson strength?"
+    },
+    {
+        "answer": "Egypt",
+        "category": "beginner",
+        "decoyOne": "Rome",
+        "decoyThree": "Syria",
+        "decoyTwo": "Spain",
+        "question": "From which country did Moses help the Israelites escape from their lives of slavery?"
+    },
+    {
+        "answer": "Satan",
+        "category": "beginner",
+        "decoyOne": "Pharisees",
+        "decoyThree": "Adam",
+        "decoyTwo": "Cain",
+        "question": "Who did Jesus say was the  of lies "
+    },
+    {
+        "answer": "Red Sea",
+        "category": "beginner",
+        "decoyOne": "Black Sea",
+        "decoyThree": "Crystal Sea",
+        "decoyTwo": "Deep Sea",
+        "question": "Which sea did the Israelites cross through to escape the Egyptians?"
+    },
+    {
+        "answer": "Good Fruit",
+        "category": "beginner",
+        "decoyOne": "Good Appetite",
+        "decoyThree": "Good Soil",
+        "decoyTwo": "Good Feelings",
+        "question": "What does a  tree bring forth?"
+    },
+    {
+        "answer": "Rested",
+        "category": "beginner",
+        "decoyOne": "Ate",
+        "decoyThree": "Watched TV",
+        "decoyTwo": "Ran",
+        "question": "What did God do on the seventh day, after he had finished creating everything?"
+    },
+    {
+        "answer": "With a Kiss",
+        "category": "beginner",
+        "decoyOne": "Stab in the Back",
+        "decoyThree": "Hiding",
+        "decoyTwo": "Poison",
+        "question": "How did Judas betray Christ?"
+    },
+    {
+        "answer": "A Ghost",
+        "category": "beginner",
+        "decoyOne": "Fish",
+        "decoyThree": "Big Bird",
+        "decoyTwo": "Boat",
+        "question": "When the disciples saw Jesus walking on water, what did they think he was?"
+    },
+    {
+        "answer": "Fishermen",
+        "category": "beginner",
+        "decoyOne": "Carpenters",
+        "decoyThree": "Bakers",
+        "decoyTwo": "Tax Collectors",
+        "question": "What job did Peter and Andrew do?"
+    },
+    {
+        "answer": "Jesus",
+        "category": "beginner",
+        "decoyOne": "Paul",
+        "decoyThree": "Marry",
+        "decoyTwo": "John",
+        "question": "Who said,  am the true vine "
+    },
+    {
+        "answer": "Striking a Rock",
+        "category": "beginner",
+        "decoyOne": "By a Passing River",
+        "decoyThree": "Camels",
+        "decoyTwo": "Rain from the Sky",
+        "question": "When there was no water to drink in the wilderness, how did Moses provide it?"
+    },
+    {
+        "answer": "Fruit",
+        "category": "beginner",
+        "decoyOne": "Shade",
+        "decoyThree": "Size",
+        "decoyTwo": "Greatness",
+        "question": "For the tree is known by its ______"
+    },
+    {
+        "answer": "An Ark",
+        "category": "beginner",
+        "decoyOne": "House",
+        "decoyThree": "Wagon",
+        "decoyTwo": "Offering Table",
+        "question": "What did Noah build?"
+    },
+    {
+        "answer": "Bethlehem",
+        "category": "beginner",
+        "decoyOne": "Jerusalem",
+        "decoyThree": "Antioch",
+        "decoyTwo": "Samaria",
+        "question": "In which town was Jesus born?"
+    },
+    {
+        "answer": "Wine",
+        "category": "beginner",
+        "decoyOne": "Cheese",
+        "decoyThree": "Jello",
+        "decoyTwo": "Bread",
+        "question": "What did Jesus turn water into?"
+    },
+    {
+        "answer": "Eve",
+        "category": "beginner",
+        "decoyOne": "Sarah",
+        "decoyThree": "Bathsheba",
+        "decoyTwo": "Tamar",
+        "question": "Who was Adams wife?"
+    },
+    {
+        "answer": "2",
+        "category": "beginner",
+        "decoyOne": "7",
+        "decoyThree": "1",
+        "decoyTwo": "12",
+        "question": "How many of each kind of animal did Noah take on the Ark?"
+    },
+    {
+        "answer": "Fisherman",
+        "category": "beginner",
+        "decoyOne": "Carpenter",
+        "decoyThree": "Metal Worker",
+        "decoyTwo": "Salesmen",
+        "question": "Peter was a ______ before becoming a Disciple of Jesus."
+    },
+    {
+        "answer": "Isaac",
+        "category": "intermediate",
+        "decoyOne": "Abraham",
+        "decoyThree": "Joseph",
+        "decoyTwo": "Lot",
+        "question": "Whose father was prepared to sacrifice hise son on an altar?"
+    },
+    {
+        "answer": "David",
+        "category": "intermediate",
+        "decoyOne": "Jesse",
+        "decoyThree": "Luke",
+        "decoyTwo": "Abraham",
+        "question": "Who was Solomon father?"
+    },
+    {
+        "answer": "Stones",
+        "category": "intermediate",
+        "decoyOne": "Birds",
+        "decoyThree": "Air",
+        "decoyTwo": "Bushes",
+        "question": "When Jesus was in the wilderness, what was he tempted to turn into loaves of bread?"
+    },
+    {
+        "answer": "Day of Pentecost",
+        "category": "intermediate",
+        "decoyOne": "Day of Sabath",
+        "decoyThree": "The Third Day",
+        "decoyTwo": "Day of Mourning",
+        "question": "On what day did the apostles receive the Holy Spirit?"
+    },
+    {
+        "answer": "40",
+        "category": "intermediate",
+        "decoyOne": "30",
+        "decoyThree": "12",
+        "decoyTwo": "5",
+        "question": "For how many years did the Israelites wander in the wilderness?"
+    },
+    {
+        "answer": "Abraham",
+        "category": "intermediate",
+        "decoyOne": "Adam",
+        "decoyThree": "Solomon",
+        "decoyTwo": "Moses",
+        "question": "Whose name means of a great multitude "
+    },
+    {
+        "answer": "Tower of Babel",
+        "category": "intermediate",
+        "decoyOne": "The Great Wall",
+        "decoyThree": "Jewish Fortress",
+        "decoyTwo": "Ship of Jezebel",
+        "question": "What was the name of the tower that the people were building when God confused their language?"
+    },
+    {
+        "answer": "Fig",
+        "category": "intermediate",
+        "decoyOne": "Apple",
+        "decoyThree": "Pomegranate",
+        "decoyTwo": "Banana",
+        "question": "What kind of leaves did Adam and Eve sew together to make clothes for themselves?"
+    },
+    {
+        "answer": "Rahab",
+        "category": "intermediate",
+        "decoyOne": "Ruth",
+        "decoyThree": "Rebecca",
+        "decoyTwo": "Reesh",
+        "question": "Who hid two spies but claimed not to know of their whereabouts when asked?"
+    },
+    {
+        "answer": "Murder",
+        "category": "intermediate",
+        "decoyOne": "Drunkeness",
+        "decoyThree": "Gluttony",
+        "decoyTwo": "Betrayal",
+        "question": "What sin is Cain remembered for?"
+    },
+    {
+        "answer": "John",
+        "category": "intermediate",
+        "decoyOne": "Luke",
+        "decoyThree": "Matthew",
+        "decoyTwo": "Mark",
+        "question": "Which of the gospels appears last in the Bible?"
+    },
+    {
+        "answer": "Jesse",
+        "category": "intermediate",
+        "decoyOne": "Saul",
+        "decoyThree": "Adam",
+        "decoyTwo": "Elisha",
+        "question": "Who was King David father?"
+    },
+    {
+        "answer": "Nineveh",
+        "category": "intermediate",
+        "decoyOne": "Rome",
+        "decoyThree": "Egypt",
+        "decoyTwo": "Crete",
+        "question": "To which city did God ask Jonah to take his message?"
+    },
+    {
+        "answer": "James",
+        "category": "intermediate",
+        "decoyOne": "John",
+        "decoyThree": "Jess",
+        "decoyTwo": "Judas",
+        "question": "Who was the brother of Jesus?"
+    },
+    {
+        "answer": "66",
+        "category": "intermediate",
+        "decoyOne": "57",
+        "decoyThree": "42",
+        "decoyTwo": "69",
+        "question": "How many books are there in the Bible?"
+    },
+    {
+        "answer": "27",
+        "category": "intermediate",
+        "decoyOne": "32",
+        "decoyThree": "19",
+        "decoyTwo": "22",
+        "question": "How many books are there in the new testament?"
+    },
+    {
+        "answer": "39",
+        "category": "intermediate",
+        "decoyOne": "33",
+        "decoyThree": "26",
+        "decoyTwo": "27",
+        "question": "How many books are there in the old testament?"
+    },
+    {
+        "answer": "David",
+        "category": "intermediate",
+        "decoyOne": "Brian",
+        "decoyThree": "Simon",
+        "decoyTwo": "Paul",
+        "question": "What was the name of the shepherd boy who became the second king in Israel?"
+    },
+    {
+        "answer": "11",
+        "category": "intermediate",
+        "decoyOne": "7",
+        "decoyThree": "8",
+        "decoyTwo": "13",
+        "question": "How many brothers in Joseph have?"
+    },
+    {
+        "answer": "Adam and Eve",
+        "category": "intermediate",
+        "decoyOne": "Joseph and Marry",
+        "decoyThree": "Jacob and Rebecca",
+        "decoyTwo": "Boaz and Ruth",
+        "question": "Who were the parents of Cain and Abel?"
+    },
+    {
+        "answer": "Raven and Dove",
+        "category": "intermediate",
+        "decoyOne": "Seagul and Parrot",
+        "decoyThree": "Puffin and Pelican",
+        "decoyTwo": "Albatross and Crow",
+        "question": "Noah sent out two kinds of birds from the Ark. What were they?"
+    },
+    {
+        "answer": "Rebecca",
+        "category": "intermediate",
+        "decoyOne": "Ruth",
+        "decoyThree": "Marry",
+        "decoyTwo": "Jade",
+        "question": "Who was the wife of Jacob?"
+    },
+    {
+        "answer": "Benjamin",
+        "category": "intermediate",
+        "decoyOne": "Judah",
+        "decoyThree": "Levi",
+        "decoyTwo": "Zebulun",
+        "question": "What was the name of Joseph's youngest brother?"
+    },
+    {
+        "answer": "Lot",
+        "category": "intermediate",
+        "decoyOne": "Zac",
+        "decoyThree": "Seth",
+        "decoyTwo": "Simeon",
+        "question": "What was the name of the nephew that travelled with Abraham?"
+    },
+    {
+        "answer": "Pharaoh's Daughter'",
+        "category": "intermediate",
+        "decoyOne": "The Gardener",
+        "decoyThree": "Fishermen",
+        "decoyTwo": "Royal Guards",
+        "question": "Who found Moses in the river?"
+    },
+    {
+        "answer": "Mt. Sinai",
+        "category": "intermediate",
+        "decoyOne": "Mt. Everest",
+        "decoyThree": "Mt. Pamir",
+        "decoyTwo": "Mt. Ahmar",
+        "question": "What was the name of the mountain where Moses was given the 10 Commandments?"
+    },
+    {
+        "answer": "A pillar of salt",
+        "category": "intermediate",
+        "decoyOne": "Insightful frog",
+        "decoyThree": "Lion",
+        "decoyTwo": "Loaf of bread",
+        "question": "When Lot wife turned around and looked at the destruction of Sodom and Gomorrah, what did she turn into?"
+    },
+    {
+        "answer": "Wisdom",
+        "category": "intermediate",
+        "decoyOne": "Wealth",
+        "decoyThree": "Friends",
+        "decoyTwo": "Power",
+        "question": "What did King Solomon ask God to give him?"
+    },
+    {
+        "answer": "Jordan River",
+        "category": "intermediate",
+        "decoyOne": "Bow River",
+        "decoyThree": "Great River",
+        "decoyTwo": "Nile River",
+        "question": "What river was Jesus baptized in?"
+    },
+    {
+        "answer": "Water into wine",
+        "category": "intermediate",
+        "decoyOne": "Blind to see",
+        "decoyThree": "Rocks to bread",
+        "decoyTwo": "Lame to walk",
+        "question": "What was the first miracle of Jesus recorded in the Bible?"
+    },
+    {
+        "answer": "Tax Collector",
+        "category": "intermediate",
+        "decoyOne": "Royal Treasurer",
+        "decoyThree": "Farmer",
+        "decoyTwo": "Tent Maker",
+        "question": "What kind of work did Zacchaeus do?"
+    },
+    {
+        "answer": "By a Well",
+        "category": "intermediate",
+        "decoyOne": "In Egypt",
+        "decoyThree": "Underground",
+        "decoyTwo": "Near a Palm Tree",
+        "question": "Where did Jesus meet the woman of Samaria?"
+    },
+    {
+        "answer": "Peter",
+        "category": "intermediate",
+        "decoyOne": "John",
+        "decoyThree": "Matthew",
+        "decoyTwo": "Luke",
+        "question": "Which disciple tried to walk on water, as Jesus did?"
+    },
+    {
+        "answer": "Bathsheba",
+        "category": "intermediate",
+        "decoyOne": "Sarah",
+        "decoyThree": "Saphire",
+        "decoyTwo": "Rahab",
+        "question": "With whom did David commit adultery?"
+    },
+    {
+        "answer": "A Meal",
+        "category": "intermediate",
+        "decoyOne": "A Hug",
+        "decoyThree": "A Sword",
+        "decoyTwo": "A Tent",
+        "question": "For what did Esau sell his birthright to Jacob?"
+    },
+    {
+        "answer": "Isaac",
+        "category": "intermediate",
+        "decoyOne": "Joseph",
+        "decoyThree": "Matthew",
+        "decoyTwo": "Joab",
+        "question": "Abraham wife, Sarah, bore a special son. What was his name?"
+    },
+    {
+        "answer": "Abraham",
+        "category": "intermediate",
+        "decoyOne": "Isaac",
+        "decoyThree": "Samuel",
+        "decoyTwo": "Elisha",
+        "question": "Who was Jacob grandfather?"
+    },
+    {
+        "answer": "Bathing",
+        "category": "intermediate",
+        "decoyOne": "Washing Clothes",
+        "decoyThree": "Eating",
+        "decoyTwo": "Feeding Horses",
+        "question": "What was Bathsheba doing when David first saw her?"
+    },
+    {
+        "answer": "Joseph",
+        "category": "advanced",
+        "decoyOne": "Joash",
+        "decoyThree": "Benjamin",
+        "decoyTwo": "Zimir",
+        "question": "Which son did Jacob love more than all the others?"
+    },
+    {
+        "answer": "Jonah",
+        "category": "advanced",
+        "decoyOne": "Elisha",
+        "decoyThree": "Hosea",
+        "decoyTwo": "Samuel",
+        "question": "Which prophet tried to flee from God when asked to preach God message in Nineveh?"
+    },
+    {
+        "answer": "Mary and Martha",
+        "category": "advanced",
+        "decoyOne": "Jude and Sarah",
+        "decoyThree": "Jass and Tamar",
+        "decoyTwo": "Ackba and Ruth",
+        "question": "What are the names of Lazarus sisters?"
+    },
+    {
+        "answer": "Ananias and Sapphira",
+        "category": "advanced",
+        "decoyOne": "Boaz and Ruth",
+        "decoyThree": "Josea and Rebar",
+        "decoyTwo": "Hosea and Rahab",
+        "question": "Who lied about the price they received for a piece of land and died as a result?"
+    },
+    {
+        "answer": "Silas",
+        "category": "advanced",
+        "decoyOne": "Timothy",
+        "decoyThree": "Saul",
+        "decoyTwo": "Peter",
+        "question": "Who was in prison with Paul in Philippi when they were singing and there was an earthquake?"
+    },
+    {
+        "answer": "God With Us",
+        "category": "advanced",
+        "decoyOne": "Lord of Hosts",
+        "decoyThree": "God of Power",
+        "decoyTwo": "God of Peace",
+        "question": "What does the name Emmanuel mean?"
+    },
+    {
+        "answer": "Jonathan",
+        "category": "advanced",
+        "decoyOne": "Saul",
+        "decoyThree": "Joab",
+        "decoyTwo": "Samuel",
+        "question": "Who was David great friend?"
+    },
+    {
+        "answer": "Harp",
+        "category": "advanced",
+        "decoyOne": "Drums",
+        "decoyThree": "Trumpet",
+        "decoyTwo": "Guitar",
+        "question": "Which musical instrument did David play for Saul?"
+    },
+    {
+        "answer": "Psalms 23",
+        "category": "advanced",
+        "decoyOne": "Psalms 145",
+        "decoyThree": "Psalms 119",
+        "decoyTwo": "Psalms 5",
+        "question": " Lord is my Shepherd, is the opening line to which Psalm?"
+    },
+    {
+        "answer": "Aaron",
+        "category": "advanced",
+        "decoyOne": "Jesse",
+        "decoyThree": "Noah",
+        "decoyTwo": "Daniel",
+        "question": "What was the name of Moses brother?"
+    },
+    {
+        "answer": "Elisha",
+        "category": "advanced",
+        "decoyOne": "Samuel",
+        "decoyThree": "Hosea",
+        "decoyTwo": "Daniel",
+        "question": "What was the name of the prophet who made an axe head float on water?"
+    },
+    {
+        "answer": "Judith",
+        "category": "advanced",
+        "decoyOne": "Ruth",
+        "decoyThree": "Sarah",
+        "decoyTwo": "Jude",
+        "question": "Who was the only female judge in the old testament?"
+    },
+    {
+        "answer": "Jezebel",
+        "category": "advanced",
+        "decoyOne": "Ruth",
+        "decoyThree": "Ahmar",
+        "decoyTwo": "Eve",
+        "question": "Who was the wife of King Ahab?"
+    },
+    {
+        "answer": "20",
+        "category": "advanced",
+        "decoyOne": "15",
+        "decoyThree": "27",
+        "decoyTwo": "21",
+        "question": "How many Kings did Judah have?"
+    },
+    {
+        "answer": "Sarah",
+        "category": "advanced",
+        "decoyOne": "Marry",
+        "decoyThree": "Ruth",
+        "decoyTwo": "Eve",
+        "question": "Who is the most mentioned woman in the Bible?"
+    },
+    {
+        "answer": "James",
+        "category": "advanced",
+        "decoyOne": "John",
+        "decoyThree": "Paul",
+        "decoyTwo": "Peter",
+        "question": "Who was the first apostle to be martyred?"
+    },
+    {
+        "answer": "Antioch",
+        "category": "advanced",
+        "decoyOne": "Rome",
+        "decoyThree": "Macedonia",
+        "decoyTwo": "Cyprus",
+        "question": "Where were the disciples first called Christians?"
+    },
+    {
+        "answer": "Calf",
+        "category": "advanced",
+        "decoyOne": "Snake",
+        "decoyThree": "Cat",
+        "decoyTwo": "Pig",
+        "question": "What golden animal did the Israelites make as an idol?"
+    },
+    {
+        "answer": "Mary Magdalene",
+        "category": "advanced",
+        "decoyOne": "Thomas",
+        "decoyThree": "Mother",
+        "decoyTwo": "James",
+        "question": "Who did Jesus appear to first after his resurrection?"
+    },
+    {
+        "answer": "Herod",
+        "category": "advanced",
+        "decoyOne": "Pharisees",
+        "decoyThree": "Judas",
+        "decoyTwo": "Josea",
+        "question": "Who wanted to kill Jesus when he was a baby?"
+    },
+    {
+        "answer": "Without Form and Empty",
+        "category": "advanced",
+        "decoyOne": "Flat and No Water",
+        "decoyThree": "Lush and Green",
+        "decoyTwo": "Nothing but Dirt",
+        "question": "What did the earth look like in the beginning?"
+    },
+    {
+        "answer": "Jerusalem",
+        "category": "advanced",
+        "decoyOne": "Bethlehem",
+        "decoyThree": "Antioch",
+        "decoyTwo": "Samaria",
+        "question": "To which city will all nations one day go to worship God?"
+    },
+    {
+        "answer": "Thomas",
+        "category": "advanced",
+        "decoyOne": "Peter",
+        "decoyThree": "John",
+        "decoyTwo": "James",
+        "question": "Which disciple wanted to see the imprint of the nails before he would believe?"
+    },
+    {
+        "answer": "Aaron",
+        "category": "advanced",
+        "decoyOne": "Altmar",
+        "decoyThree": "Guard",
+        "decoyTwo": "Moses",
+        "question": "Who claimed that the golden calf simply came out of the fire?"
+    },
+    {
+        "answer": "Psalm 119",
+        "category": "advanced",
+        "decoyOne": "Psalm 45",
+        "decoyThree": "Psalm 23",
+        "decoyTwo": "Psalm 145",
+        "question": "Which is the longest Psalm?"
+    },
+    {
+        "answer": "Animal Sacrifice",
+        "category": "advanced",
+        "decoyOne": "Prayer with Fasting",
+        "decoyThree": "Isolation for 1 Week",
+        "decoyTwo": "Prayer from the Priest",
+        "question": "How were sins forgiven in the Old Testament?"
+    },
+    {
+        "answer": "Rachel",
+        "category": "advanced",
+        "decoyOne": "Raham",
+        "decoyThree": "Rebecca",
+        "decoyTwo": "Tamar",
+        "question": "Which of his wives did Jacob love the most?"
+    },
+    {
+        "answer": "John",
+        "category": "advanced",
+        "decoyOne": "James",
+        "decoyThree": "Timothy",
+        "decoyTwo": "Paul",
+        "question": "To whom was the Revelation of Jesus Christ given?"
+    },
+    {
+        "answer": "In the Ground",
+        "category": "advanced",
+        "decoyOne": "In a Safe",
+        "decoyThree": "Under the Bed",
+        "decoyTwo": "In the Bank",
+        "question": "Where did the man who received one talent from his master hide it?"
+    },
+    {
+        "answer": "Leah",
+        "category": "advanced",
+        "decoyOne": "Rachel",
+        "decoyThree": "Ruth",
+        "decoyTwo": "Hagar",
+        "question": "Who was Jacob first wife?"
+    },
+    {
+        "answer": "30",
+        "category": "advanced",
+        "decoyOne": "27",
+        "decoyThree": "35",
+        "decoyTwo": "25",
+        "question": "At what age did Jesus start his ministry?"
+    },
+    {
+        "answer": "Cloud and Fire",
+        "category": "advanced",
+        "decoyOne": "Sand Storm",
+        "decoyThree": "The Wind",
+        "decoyTwo": "Lightning",
+        "question": "What guided the Israelites through the wilderness?"
+    },
+    {
+        "answer": "Ishmael",
+        "category": "expert",
+        "decoyOne": "Lot",
+        "decoyThree": "Joash",
+        "decoyTwo": "Cain",
+        "question": "What was the name of Hagar son?"
+    },
+    {
+        "answer": "Nebuchadnezzar",
+        "category": "expert",
+        "decoyOne": "Moab",
+        "decoyThree": "Herod",
+        "decoyTwo": "Solomon",
+        "question": "Which king dreamed about a large statue of a man made from different metals?"
+    },
+    {
+        "answer": "Elijah",
+        "category": "expert",
+        "decoyOne": "Mar",
+        "decoyThree": "Dan",
+        "decoyTwo": "Asher",
+        "question": "Who ran from Mount Carmel to Samaria faster than Ahab could drive his chariot?"
+    },
+    {
+        "answer": "Judah",
+        "category": "expert",
+        "decoyOne": "Benjamin",
+        "decoyThree": "Dan",
+        "decoyTwo": "Asher",
+        "question": "To which tribe did Jesus belong?"
+    },
+    {
+        "answer": "Had Red Hair",
+        "category": "expert",
+        "decoyOne": "Had Big Feet",
+        "decoyThree": "Had Teeth",
+        "decoyTwo": "Had Small Ears",
+        "question": "What was noticeable about Jacob twin brother, Esau, at birth?"
+    },
+    {
+        "answer": "He Died",
+        "category": "expert",
+        "decoyOne": "Became Blind",
+        "decoyThree": "Became Ill",
+        "decoyTwo": "Arrested",
+        "question": "What happened to Elimelech in Moab?"
+    },
+    {
+        "answer": "Zimir",
+        "category": "expert",
+        "decoyOne": "Ahab",
+        "decoyThree": "Jeroboam",
+        "decoyTwo": "Absalon",
+        "question": "What was the name of the shortest reighning King?"
+    },
+    {
+        "answer": "Deuteronomy",
+        "category": "expert",
+        "decoyOne": "Genesis",
+        "decoyThree": "Psalms",
+        "decoyTwo": "Judges",
+        "question": "Every quote Jesus used against Satan was from what book in the Bible?"
+    },
+    {
+        "answer": "Manesseh",
+        "category": "expert",
+        "decoyOne": "David",
+        "decoyThree": "Saul",
+        "decoyTwo": "Solomon",
+        "question": "Who was the longest reighning King?"
+    },
+    {
+        "answer": "Joash",
+        "category": "expert",
+        "decoyOne": "Hoshea",
+        "decoyThree": "Rehoboam",
+        "decoyTwo": "David",
+        "question": "Who was the youngest King in the Bible?"
+    },
+    {
+        "answer": "David",
+        "category": "expert",
+        "decoyOne": "Moses",
+        "decoyThree": "Paul",
+        "decoyTwo": "Abraham",
+        "question": "Jesus is the most mentioned person in the Bible. Who is the second most mentioned person?"
+    }
+]

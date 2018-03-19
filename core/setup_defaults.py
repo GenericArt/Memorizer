@@ -1,5 +1,4 @@
 import sqlite3, json, csv
-from pprint import pprint
 
 
 
@@ -14,7 +13,7 @@ def setup():
 	### Setup Verses Table
 
 	tableName = ["DefaultEnglish", "DefaultKorean"]
-	columns = "name_id INTEGER PRIMARY KEY AUTOINCREMENT, verseID text, verse text, answer1 text, answer2 text, answer3 text, verseType text"
+	columns = "row_id INTEGER PRIMARY KEY AUTOINCREMENT, verseID text, verse text, verseQuest text, answer1 text, answer2 text, answer3 text, verseType text"
 
 	for lang in tableName:
 		cur.execute("CREATE TABLE %s (%s)" % (lang, columns))
@@ -29,11 +28,11 @@ def setup():
 		scriptEng = data[verse]["scripture"]["english"]
 		scriptKor = data[verse]["scripture"]["korean"]
 
-		rowEng = tuple((scriptEng["verseID"], scriptEng["verse"], scriptEng["answer1"], scriptEng["answer2"], scriptEng["answer3"], verType))
-		rowKor = tuple((scriptKor["verseID"], scriptKor["verse"], scriptKor["answer1"], scriptEng["answer2"], scriptEng["answer3"], verType))
+		rowEng = tuple((scriptEng["verseID"], scriptEng["verse"], scriptEng["verseQuest"], scriptEng["answer1"], scriptEng["answer2"], scriptEng["answer3"], verType))
+		rowKor = tuple((scriptKor["verseID"], scriptKor["verse"], scriptEng["verseQuest"], scriptKor["answer1"], scriptEng["answer2"], scriptEng["answer3"], verType))
 
-		cur.execute("INSERT INTO DefaultEnglish VALUES (NULL,?,?,?,?,?,?)", rowEng)
-		cur.execute("INSERT INTO DefaultKorean VALUES (NULL,?,?,?,?,?,?)", rowKor)
+		cur.execute("INSERT INTO DefaultEnglish VALUES (NULL,?,?,?,?,?,?,?)", rowEng)
+		cur.execute("INSERT INTO DefaultKorean VALUES (NULL,?,?,?,?,?,?,?)", rowKor)
 
 
 
@@ -42,7 +41,7 @@ def setup():
 
 	decoyWordsFilePath = "core/decoy_words.csv"
 
-	cur.execute("CREATE TABLE DecoyWords (name_id INTEGER PRIMARY KEY AUTOINCREMENT, wordsets text)")
+	cur.execute("CREATE TABLE DecoyWords (row_id INTEGER PRIMARY KEY AUTOINCREMENT, wordsets text)")
 	conn.commit()
 	listOfListDecoys = []
 	with open(decoyWordsFilePath) as f:
@@ -52,11 +51,20 @@ def setup():
 			listOfListDecoys.append((str("-".join(row))))
 	
 	for wordset in listOfListDecoys:
-		print(wordset)
-		print("---------")
 		cur.execute("INSERT INTO DecoyWords VALUES (NULL,?)", (wordset,))
 
 
+
+	conn.commit()
+
+	quizQuestionsJSon = json.load(open('core/quizquestions.json'))
+
+	cur.execute("CREATE TABLE QuizQuestions (row_id INTEGER PRIMARY KEY AUTOINCREMENT, difficulty text, question text, answer text, decoyone text, decoytwo text, decoythree text)")
+	conn.commit()
+
+	for q in quizQuestionsJSon:
+		qRow = tuple((q["category"], q["question"], q["answer"], q["decoyOne"], q["decoyTwo"], q["decoyThree"]))
+		cur.execute("INSERT INTO QuizQuestions VALUES (NULL,?,?,?,?,?,?)", qRow)
 
 	conn.commit()
 	conn.close()

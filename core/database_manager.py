@@ -3,23 +3,9 @@ from pprint import pprint
 from random import choice
 
 
-
-		
-def create_table(db, tableName, columns):
-
-	con = sqlite3.connect(db)
-	cur = conn.cursor()
-	
-	cur.execute("CREATE TABLE %s (%s)" % (tableName, columns))
-
-	con.close()
-
-
-
 def getNumberOfRows(db, tableName):
 	
 	con = sqlite3.connect(db)
-	cur = con.cursor()
 	
 	result = []
 
@@ -27,7 +13,7 @@ def getNumberOfRows(db, tableName):
 
 		con.row_factory = sqlite3.Row
 		cur = con.cursor()
-		cur.execute("SELECT name_id FROM %s" % (tableName))
+		cur.execute("SELECT row_id FROM %s" % (tableName))
 
 		rows = cur.fetchall()
 		result = cur.fetchall()
@@ -47,12 +33,8 @@ def getRowById(db, tableName, rowID):
 
 		con.row_factory = sqlite3.Row
 		cur = con.cursor()
-
-		cur.execute("SELECT * FROM %s WHERE name_id = %s" % (tableName, rowID))
-
+		cur.execute("SELECT * FROM %s WHERE row_id = %s" % (tableName, rowID))
 		rows = cur.fetchall()
-		print(rows)
-		# rowKeys = rows.keys()
 
 		for row in rows:
 			for key in row.keys():
@@ -90,26 +72,26 @@ def getDecoyWords(db):
 
 
 
-def getAVerse(db, tableName, rowID):
+def getARow(db, tableName, rowID):
 
 	con = sqlite3.connect(db)
-	verse = {}
+	data = {}
 
 	with con:
 
 		con.row_factory = sqlite3.Row
 		cur = con.cursor()
 
-		cur.execute("SELECT * FROM %s WHERE name_id=%s" % (tableName, rowID))
+		cur.execute("SELECT * FROM %s WHERE row_id=%s" % (tableName, rowID))
 
 		rows = cur.fetchall()
 		for key in rows[0].keys():
-			verse[key] = rows[0][key]
+			data[key] = rows[0][key]
 
 		
 	con.close()
 
-	return verse
+	return data
  
 
 

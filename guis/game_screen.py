@@ -4,7 +4,7 @@ from tkinter import ttk
 
 
 def multi_choise_screen(self, root, selectedVerse, allDecoyWordsDict):
-	pass
+
 	# create welcome frame
 	game_frame = Frame(root)
 	game_frame.grid(row=0, column=0, sticky=N+S+W+E)
@@ -50,7 +50,7 @@ def multi_choise_screen(self, root, selectedVerse, allDecoyWordsDict):
 	instuctLabel = Label(top_frame, text="Fill in the blanks!")
 	instuctLabel.grid(row=0, column=2)
 
-	verseLabel = Message(center_frame, text=selectedVerse["verse"])
+	verseLabel = Message(center_frame, text=selectedVerse["verseQuest"])
 	verseLabel.config(font=("helvetica", 20), aspect=300)
 	verseLabel.grid(row=1, column=2, sticky=N+S+W+E)
 
@@ -66,14 +66,18 @@ def multi_choise_screen(self, root, selectedVerse, allDecoyWordsDict):
 	row2Var = StringVar()
 	row3Var = StringVar()
 
-	row1AnsBtn1 = Radiobutton(btm_frame1, indicatoron=0, highlightcolor="blue", variable=row1Var, width=12, height=2)
+	row1Var.set("None")
+	row2Var.set("None")
+	row3Var.set("None")
+
+	row1AnsBtn1 = Radiobutton(btm_frame1, indicatoron=0, variable=row1Var, width=12, height=2)
 	row1AnsBtn1.grid(row=0, column=1)
 	row1AnsBtn2 = Radiobutton(btm_frame1, indicatoron=0, variable=row1Var, width=12, height=2)
 	row1AnsBtn2.grid(row=0, column=2)
 	row1AnsBtn3 = Radiobutton(btm_frame1, indicatoron=0, variable=row1Var, width=12, height=2)
 	row1AnsBtn3.grid(row=0, column=3)
 	row1Label1 = Label(btm_frame1, text="Answer 1: ")
-	row1Label1.grid(row=0, column=0)
+	row1Label1.grid(row=0, column=0, padx=10)
 
 	row2AnsBtn1 = Radiobutton(btm_frame1, indicatoron=0, variable=row2Var, width=12, height=2)
 	row2AnsBtn1.grid(row=1, column=1)
@@ -82,7 +86,7 @@ def multi_choise_screen(self, root, selectedVerse, allDecoyWordsDict):
 	row2AnsBtn3 = Radiobutton(btm_frame1, indicatoron=0, variable=row2Var, width=12, height=2)
 	row2AnsBtn3.grid(row=1, column=3)
 	row1Label2 = Label(btm_frame1, text="Answer 2: ")
-	row1Label2.grid(row=1, column=0)
+	row1Label2.grid(row=1, column=0, padx=10)
 
 	row3AnsBtn1 = Radiobutton(btm_frame1, indicatoron=0, variable=row3Var, width=12, height=2)
 	row3AnsBtn1.grid(row=2, column=1)
@@ -91,7 +95,7 @@ def multi_choise_screen(self, root, selectedVerse, allDecoyWordsDict):
 	row3AnsBtn3 = Radiobutton(btm_frame1, indicatoron=0, variable=row3Var, width=12, height=2)
 	row3AnsBtn3.grid(row=2, column=3)
 	row1Label3 = Label(btm_frame1, text="Answer 3: ")
-	row1Label3.grid(row=2, column=0)
+	row1Label3.grid(row=2, column=0, padx=10)
 
 
 	butRow1 = [row1AnsBtn1, row1AnsBtn2, row1AnsBtn3]

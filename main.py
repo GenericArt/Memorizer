@@ -1,14 +1,17 @@
-import os
+import os, sys
+print(sys.executable)
 
 from random import choice, shuffle
 from tkinter import *
 from tkinter import font, messagebox
+from pprint import pprint
 
 import core.database_manager as dbManager
 import core.setup_defaults as setupDefaults
 
-import guis.game_screen as gameScreen
 import guis.welcome_screen as welcomeScreen
+import guis.game_screen as gameScreen
+import guis.quiz_game_screen as quizScreen
 
 
 # gettext.bindtextdomain('myapplication', 'language')
@@ -23,13 +26,18 @@ class Memorizer(Frame):
 		self.master = master
 		self.dbPath = "core/main.db"
 
-		#Select Language
-		self.languageSelection()
-
 		# Create Database if not Exists
 		if not os.path.isfile("core/main.db"):
 			print("DB did not exist")
 			setupDefaults.setup()
+
+		# Select Language
+		self.verseTable = ""
+		self.decoyWordsTable = ""
+		self.questionsTable = ""
+		self.verseRowIDs = []
+		self.questionRowIDs = []
+		self.languageSelection()
 
 		# Setup master grid
 		root.grid_rowconfigure(1,weight=1)
@@ -43,14 +51,14 @@ class Memorizer(Frame):
 		# Temp Variable
 		langSel = "eng"
 
-		self.verseTable = ""
-		self.decoyWordsTable = ""
 		if langSel == "kor":
 			self.verseTable = "DefaultKorean"
 			self.verseRowIDs = dbManager.getNumberOfRows(self.dbPath, self.verseTable)
 		else:
 			self.verseTable = "DefaultEnglish"
+			self.questionsTable = "QuizQuestions"
 			self.verseRowIDs = dbManager.getNumberOfRows(self.dbPath, self.verseTable)
+			self.questionRowIDs = dbManager.getNumberOfRows(self.dbPath, self.questionsTable)
 			self.decoyWordsTable = "DecoyWords"
 
 
@@ -59,20 +67,16 @@ class Memorizer(Frame):
 			welcomeScreen.welcome_screen(self, root)
 
 
-		
-
-
 
 
 	def verseQuestStart(self):
-		print("Verse Quest Windows Called")
 
 		if not self.verseRowIDs:
 			self.verseRowIDs = dbManager.getNumberOfRows(self.dbPath, self.verseTable)
 
 		rowID = choice(self.verseRowIDs)
 
-		selectedVerse = dbManager.getAVerse(self.dbPath, self.verseTable, rowID)
+		selectedVerse = dbManager.getARow(self.dbPath, self.verseTable, rowID)
 		decoyWords1 = dbManager.getDecoyWords(self.dbPath)
 		decoyWords2 = dbManager.getDecoyWords(self.dbPath)
 		decoyWords3 = dbManager.getDecoyWords(self.dbPath)
@@ -111,15 +115,36 @@ class Memorizer(Frame):
 		
 		if answerOne == selectedVerse["answer1"] and answerTwo == selectedVerse["answer2"] and answerThree == selectedVerse["answer3"]:
 			print("Answer is Correct!!")
-			self.verseRowIDs.remove(selectedVerse['name_id'])
+			self.verseRowIDs.remove(selectedVerse['row_id'])
 			self.verseQuestStart()
 		else:
 			print("Sorry, please try again...")
 			messagebox.showinfo("Incorrect", "Sorry, please try again!")
 
 
+	def quizQuestionsStart(self):
+
+		if not self.questionRowIDs:
+			self.questionRowIDs = dbManager.getNumberOfRows(self.dbPath, self.questionsTable)
+
+		rowID = choice(self.questionRowIDs)
+
+		selectedQuestion = dbManager.getARow(self.dbPath, self.questionsTable, rowID)
+		pprint(selectedQuestion)
+		quizScreen.gameScreen(self, root, selectedQuestion)
 
 
+	def quizCheckAnswer(self, userAnswerVar, selectedQuestion):
+
+		userAnswer = userAnswerVar.get()
+		correctAnswer = selectedQuestion['answer']
+
+		if userAnswer == correctAnswer:
+			print("Quiz Answer Correct!")
+			self.quizQuestionsStart()
+		else:
+			print("Sorry, please try again...")
+			messagebox.showinfo("Incorrect", "Sorry, please try again!")
 
 
 

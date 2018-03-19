@@ -3,13 +3,15 @@
 	"verse1":{"verseType":"worry",
 		"scripture":{"english":{
 			"verseID":"Proverbs 3:5-6",
-			"verse":"Trust in the LORD with all your ______ and lean not on your own ____________. In all your ways ________ to him, and he will make your paths straight.",
+			"verse":"Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.",
+			"verseQuest":"Trust in the LORD with all your ______ and lean not on your own ____________. In all your ways ________ to him, and he will make your paths straight.",
 			"answer1":"heart",
 			"answer2":"understanding",
 			"answer3":"submit"
 		}, "korean":{
 			"verseID":"잠언 3:5-6",
 			"verse":"너는 마음을 다하여 여호와를 신뢰하고 네 지식을 의지하지 말아라. 너는 모든 일에 여호와를 인정하라. 그러면 그가 너에게 바른 길을 보이실 것이다.",
+			"verseQuest":"",
 			"answer1":"NoneRightNow",
 			"answer2":"NoneRightNow",
 			"answer3":"NoneRightNow"
@@ -19,18 +21,56 @@
 	"verse2":{"verseType":"worry",
 		"scripture":{"english":{
 			"verseID":"Philippians 4:6-7",
-			"verse":"Do not be ________ about anything, but in every situation, by ________ and petition, with thanksgiving, present your requests to God. And the ________ of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus",
+			"verse":"Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.",
+			"verseQuest":"Do not be ________ about anything, but in every situation, by ________ and petition, with thanksgiving, present your requests to God. And the ________ of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus",
 			"answer1":"anxious",
 			"answer2":"prayer",
 			"answer3":"peace"
 		}, "korean":{
 			"verseID":"빌립보서 4:6-7",
 			"verse":"아무것도 염려하지 말고 모든 일에 기도와 간구로 여러분이 필요로 하는 것을 감사하는 마음으로 하나님께 말씀드리십시오. 그러면 도저히 상상도 할 수 없는 하나님의 놀라운 평안이 그리스도 예수님 안에서 여러분의 마음과 생각을 지켜 줄 것입니다.",
+			"verseQuest":"",
 			"answer1":"NoneRightNow",
 			"answer2":"NoneRightNow",
 			"answer3":"NoneRightNow"
 		}}
 		
+	},
+	"verse3":{"verseType":"humility",
+		"scripture":{"english":{
+			"verseID":"Numbers 12:3",
+			"verse":"Now Moses was a very humble man, more humble than anyone else on the face of the earth.",
+			"verseQuest":"Now Moses was a very _________ man, more _________ than anyone else on the face of the _________.",
+			"answer1":"humble",
+			"answer2":"humble",
+			"answer3":"earth"
+		}, "korean":{
+			"verseID":"민수기 12:3",
+			"verse":"모세는 세상의 그 누구보다도 겸손한 사람이었다.",
+			"verseQuest":"",
+			"answer1":"NoneRightNow",
+			"answer2":"NoneRightNow",
+			"answer3":"NoneRightNow"
+		}}
+
+	},
+  	"verse4":{"verseType":"humility",
+		"scripture":{"english":{
+			"verseID":"2 Samuel 7:18",
+			"verse":"Then King David went in and sat before the Lord, and he said “Who am I, Sovereign Lord, and what is my family, that you have brought me this far?",
+			"verseQuest":"Then King David went in and sat before the Lord, and he said “Who am I, Sovereign Lord, and what is my family, that you have brought me this far?",
+			"answer1":"humble",
+			"answer2":"humble",
+			"answer3":"earth"
+		}, "korean":{
+			"verseID":"사무엘하 7:18",
+			"verse":"그러자다윗은성막에들어가서여호 와 앞에 앉아 이렇게 기도하였다. “주 여호와여, 나는누구며내가족은무 엇인데 나에게 이런 축복을 베풀어 주 셨습니까?",
+			"verseQuest":"",
+			"answer1":"NoneRightNow",
+			"answer2":"NoneRightNow",
+			"answer3":"NoneRightNow"
+		}}
+
 	}
 
 
