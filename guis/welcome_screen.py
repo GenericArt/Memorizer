@@ -41,8 +41,8 @@ def welcome_screen(self, root):
 
 
 	# create buttons
-	vmemBtn = Button(center_frame, text='Verse Quest', width=12, height=2, 
-						command=self.verseQuestWindow)
+	vmemBtn = Button(center_frame, text='Verse Quest', width=12, height=2,
+					 command=self.verseQuestStart)
 	vmemBtn.grid(row=1, column=1)
 
 	storyBtn = Button(center_frame, text='Story Mode', width=12, height=2, command=None)

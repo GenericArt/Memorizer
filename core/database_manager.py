@@ -21,7 +21,7 @@ def getNumberOfRows(db, tableName):
 	con = sqlite3.connect(db)
 	cur = con.cursor()
 	
-	result = ""
+	result = []
 
 	with con:
 
@@ -30,13 +30,9 @@ def getNumberOfRows(db, tableName):
 		cur.execute("SELECT name_id FROM %s" % (tableName))
 
 		rows = cur.fetchall()
-		
-		cur.execute("SELECT * FROM %s ORDER BY name_id DESC LIMIT 1" % (tableName))
-		result = cur.fetchone()
-		
-		
-
-	
+		result = cur.fetchall()
+		for row in rows:
+			result.append(row[0])
 	con.close()
 	return result
 
@@ -94,7 +90,7 @@ def getDecoyWords(db):
 
 
 
-def getAVerse(db):
+def getAVerse(db, tableName, rowID):
 
 	con = sqlite3.connect(db)
 	verse = {}
@@ -104,7 +100,7 @@ def getAVerse(db):
 		con.row_factory = sqlite3.Row
 		cur = con.cursor()
 
-		cur.execute("SELECT * FROM DefaultEnglish ORDER BY RANDOM() LIMIT 1")
+		cur.execute("SELECT * FROM %s WHERE name_id=%s" % (tableName, rowID))
 
 		rows = cur.fetchall()
 		for key in rows[0].keys():

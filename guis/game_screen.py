@@ -108,8 +108,13 @@ def multi_choise_screen(self, root, selectedVerse, allDecoyWordsDict):
 
 
 	userAnswers = {"answer1":row1Var, "answer2":row2Var, "answer3":row3Var}
-	okBtn = Button(btm_frame2, text="Check Answer", width=25, height=4, command=lambda: self.verseCheckAnswer(userAnswers, selectedVerse))
+	okBtn = Button(btm_frame2, text="Check Answer", width=25, height=4,
+				   command=lambda: self.verseCheckAnswer(userAnswers, selectedVerse))
 	okBtn.grid(row=0, column=2, pady=20)
+
+	exitBtn = Button(btm_frame3, text="Leave", width=25, height=4,
+				   command=lambda: self.screenSwitcher("home"))
+	exitBtn.grid(row=0, column=3, pady=20)
 
 
 
