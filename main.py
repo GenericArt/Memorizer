@@ -1,5 +1,4 @@
 import os, sys
-print(sys.executable)
 
 from random import choice, shuffle
 from tkinter import *
@@ -12,145 +11,163 @@ import core.setup_defaults as setupDefaults
 import guis.welcome_screen as welcomeScreen
 import guis.game_screen as gameScreen
 import guis.quiz_game_screen as quizScreen
-
-
-# gettext.bindtextdomain('myapplication', 'language')
+import guis.moodverses_screen as moodScreen
+import guis.moodverses_subscreen as moodSubScreen
 
 
 
 
 class Memorizer(Frame):
-	"""docstring for Memorizer"""
-	def __init__(self, master = None):
-		Frame.__init__(self, master)
-		self.master = master
-		self.dbPath = "core/main.db"
-
-		# Create Database if not Exists
-		if not os.path.isfile("core/main.db"):
-			print("DB did not exist")
-			setupDefaults.setup()
-
-		# Select Language
-		self.verseTable = ""
-		self.decoyWordsTable = ""
-		self.questionsTable = ""
-		self.verseRowIDs = []
-		self.questionRowIDs = []
-		self.languageSelection()
-
-		# Setup master grid
-		root.grid_rowconfigure(1,weight=1)
-		root.grid_columnconfigure(0, weight=1)
-
-		self.font = font.Font(family="helvetica", size=24)
-		welcomeScreen.welcome_screen(self, root)
+    """docstring for Memorizer"""
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.master = master
+        self.dbPath = "core/main.db"
 
 
-	def languageSelection(self):
-		# Temp Variable
-		langSel = "eng"
+        # Create Database if not Exists
+        if not os.path.isfile("core/main.db"):
+            print("DB did not exist")
+            setupDefaults.setup()
 
-		if langSel == "kor":
-			self.verseTable = "DefaultKorean"
-			self.verseRowIDs = dbManager.getNumberOfRows(self.dbPath, self.verseTable)
-		else:
-			self.verseTable = "DefaultEnglish"
-			self.questionsTable = "QuizQuestions"
-			self.verseRowIDs = dbManager.getNumberOfRows(self.dbPath, self.verseTable)
-			self.questionRowIDs = dbManager.getNumberOfRows(self.dbPath, self.questionsTable)
-			self.decoyWordsTable = "DecoyWords"
+        # Select Language
+        self.verseTable = ""
+        self.decoyWordsTable = ""
+        self.questionsTable = ""
+        self.verseRowIDs = []
+        self.questionRowIDs = []
+        self.moodTypes = []
+        self.languageSelection()
+
+        # Setup master grid
+        root.grid_rowconfigure(1,weight=1)
+        root.grid_columnconfigure(0, weight=1)
+
+        self.font = font.Font(family="helvetica", size=24)
+        welcomeScreen.welcome_screen(self, root)
 
 
-	def screenSwitcher(self, screenName):
-		if screenName == "home":
-			welcomeScreen.welcome_screen(self, root)
+    def languageSelection(self):
+        # Temp Variable
+        langSel = "eng"
+
+        if langSel == "kor":
+            self.verseTable = "DefaultKorean"
+            self.verseRowIDs = dbManager.getNumberOfRows(self.dbPath, self.verseTable)
+        else:
+            self.verseTable = "DefaultEnglish"
+            self.questionsTable = "QuizQuestions"
+            self.moodBoosterTable = "MoodVerses"
+            self.verseRowIDs = dbManager.getNumberOfRows(self.dbPath, self.verseTable)
+            self.questionRowIDs = dbManager.getNumberOfRows(self.dbPath, self.questionsTable)
+            self.decoyWordsTable = "DecoyWords"
+            self.moodTypes = dbManager.getDistinctValuesFromColumn(self.dbPath, "category", self.moodBoosterTable)
 
 
+    def screenSwitcher(self, screenName):
+
+        if screenName == "home":
+            welcomeScreen.welcome_screen(self, root)
+        elif screenName == "moodbooster":
+            moodScreen.showMoodsScreen(self, root, self.moodTypes)
+        elif screenName == "moodsubscreen":
+            moodScreen.showMoodsScreen(self, root, self.moodTypes)
 
 
-	def verseQuestStart(self):
+    def moodTypeSelection(self, mood):
 
-		if not self.verseRowIDs:
-			self.verseRowIDs = dbManager.getNumberOfRows(self.dbPath, self.verseTable)
+        self.moodVersesDict = dbManager.getAllRowsContainingThis(self.dbPath, self.moodBoosterTable, "category", mood)
+        moodSubScreen.show_subscreen(self, root, self.moodVersesDict)
 
-		rowID = choice(self.verseRowIDs)
 
-		selectedVerse = dbManager.getARow(self.dbPath, self.verseTable, rowID)
-		decoyWords1 = dbManager.getDecoyWords(self.dbPath)
-		decoyWords2 = dbManager.getDecoyWords(self.dbPath)
-		decoyWords3 = dbManager.getDecoyWords(self.dbPath)
-
-		allAnswers = [selectedVerse[x] for x in ["answer1","answer2","answer3"]]
-
-		while [x for y in decoyWords1 for x in allAnswers if y in x]:
-			decoyWords1 = dbManager.getDecoyWords(self.dbPath)
-		while [x for y in decoyWords1 for x in allAnswers if y in x]:
-			decoyWords2 = dbManager.getDecoyWords(self.dbPath)
-		while [x for y in decoyWords1 for x in allAnswers if y in x]:
-			decoyWords3 = dbManager.getDecoyWords(self.dbPath)
-
-		print(selectedVerse)
-		print(allAnswers)
-
-		decoyWords1.append(selectedVerse["answer1"])
-		shuffle(decoyWords1)
-		decoyWords2.append(selectedVerse["answer2"])
-		shuffle(decoyWords2)
-		decoyWords3.append(selectedVerse["answer3"])
-		shuffle(decoyWords3)
-
-		allDecoyWordDict = {"decoy1":decoyWords1, "decoy2":decoyWords2, "decoy3":decoyWords3}
-
-		gameScreen.multi_choise_screen(self, root, selectedVerse, allDecoyWordDict)
+    def onMoodVerseSelected(self, passedObj):
+        w = passedObj.widget
+        index = int(w.curselection()[0])
+        value = w.get(index)
+        print('You selected item %d: "%s"' % (index, value))
+        # pprint(self.moodVersesDict)
+        self.verseLabel['text'] = self.moodVersesDict[value]['verse']
 
 
 
-	def verseCheckAnswer(self, userAnswers, selectedVerse):
-		
-		answerOne = userAnswers["answer1"].get()
-		answerTwo = userAnswers["answer2"].get()
-		answerThree = userAnswers["answer3"].get()
+    def verseQuestStart(self):
 
-		
-		if answerOne == selectedVerse["answer1"] and answerTwo == selectedVerse["answer2"] and answerThree == selectedVerse["answer3"]:
-			print("Answer is Correct!!")
-			self.verseRowIDs.remove(selectedVerse['row_id'])
-			self.verseQuestStart()
-		else:
-			print("Sorry, please try again...")
-			messagebox.showinfo("Incorrect", "Sorry, please try again!")
+        if not self.verseRowIDs:
+            self.verseRowIDs = dbManager.getNumberOfRows(self.dbPath, self.verseTable)
+
+        rowID = choice(self.verseRowIDs)
+
+        selectedVerse = dbManager.getARow(self.dbPath, self.verseTable, rowID)
+        decoyWords1 = dbManager.getDecoyWords(self.dbPath)
+        decoyWords2 = dbManager.getDecoyWords(self.dbPath)
+        decoyWords3 = dbManager.getDecoyWords(self.dbPath)
+
+        allAnswers = [selectedVerse[x] for x in ["answer1","answer2","answer3"]]
+
+        while [x for y in decoyWords1 for x in allAnswers if y in x]:
+            decoyWords1 = dbManager.getDecoyWords(self.dbPath)
+        while [x for y in decoyWords1 for x in allAnswers if y in x]:
+            decoyWords2 = dbManager.getDecoyWords(self.dbPath)
+        while [x for y in decoyWords1 for x in allAnswers if y in x]:
+            decoyWords3 = dbManager.getDecoyWords(self.dbPath)
+
+        decoyWords1.append(selectedVerse["answer1"])
+        shuffle(decoyWords1)
+        decoyWords2.append(selectedVerse["answer2"])
+        shuffle(decoyWords2)
+        decoyWords3.append(selectedVerse["answer3"])
+        shuffle(decoyWords3)
+
+        allDecoyWordDict = {"decoy1":decoyWords1, "decoy2":decoyWords2, "decoy3":decoyWords3}
+
+        gameScreen.multi_choise_screen(self, root, selectedVerse, allDecoyWordDict)
 
 
-	def quizQuestionsStart(self):
+    def verseCheckAnswer(self, userAnswers, selectedVerse):
 
-		if not self.questionRowIDs:
-			self.questionRowIDs = dbManager.getNumberOfRows(self.dbPath, self.questionsTable)
+        answerOne = userAnswers["answer1"].get()
+        answerTwo = userAnswers["answer2"].get()
+        answerThree = userAnswers["answer3"].get()
 
-		rowID = choice(self.questionRowIDs)
+        if answerOne == selectedVerse["answer1"] and answerTwo == selectedVerse["answer2"] and answerThree == selectedVerse["answer3"]:
+            print("Answer is Correct!!")
+            self.verseRowIDs.remove(selectedVerse['row_id'])
+            self.verseQuestStart()
+        else:
+            print("Sorry, please try again...")
+            messagebox.showinfo("Incorrect", "Sorry, please try again!")
 
-		selectedQuestion = dbManager.getARow(self.dbPath, self.questionsTable, rowID)
-		pprint(selectedQuestion)
-		quizScreen.gameScreen(self, root, selectedQuestion)
+
+    def quizQuestionsStart(self):
+
+        if not self.questionRowIDs:
+            self.questionRowIDs = dbManager.getNumberOfRows(self.dbPath, self.questionsTable)
+
+        rowID = choice(self.questionRowIDs)
+
+        selectedQuestion = dbManager.getARow(self.dbPath, self.questionsTable, rowID)
+        pprint(selectedQuestion)
+        quizScreen.gameScreen(self, root, selectedQuestion)
 
 
-	def quizCheckAnswer(self, userAnswerVar, selectedQuestion):
+    def quizCheckAnswer(self, userAnswerVar, selectedQuestion):
 
-		userAnswer = userAnswerVar.get()
-		correctAnswer = selectedQuestion['answer']
+        userAnswer = userAnswerVar.get()
+        correctAnswer = selectedQuestion['answer']
 
-		if userAnswer == correctAnswer:
-			print("Quiz Answer Correct!")
-			self.quizQuestionsStart()
-		else:
-			print("Sorry, please try again...")
-			messagebox.showinfo("Incorrect", "Sorry, please try again!")
+        if userAnswer == correctAnswer:
+            print("Quiz Answer Correct!")
+            self.quizQuestionsStart()
+        else:
+            print("Sorry, please try again...")
+            messagebox.showinfo("Incorrect", "Sorry, please try again!")
+
 
 
 
 if __name__ == '__main__':
-	root = Tk()
-	root.geometry("500x600")
-	root.title("Memorizer")
-	app = Memorizer(root)
-	root.mainloop()
+    root = Tk()
+    root.geometry("500x600")
+    root.title("Memorizer")
+    app = Memorizer(root)
+    root.mainloop()
